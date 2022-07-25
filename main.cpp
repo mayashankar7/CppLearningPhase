@@ -11,6 +11,11 @@ int main() {
     cout<<CHAR_MAX<<endl;
     cout<<CHAR_MIN<<endl;
     cout<<INT_MAX<<endl;
+//    postfix and prefix concept of increment and decrement
+    int a = 1;
+    int b = ++a;   // b = 1
+    int c = a;
+    cout<<a<<b<<c;
 
     return 0;
 }
