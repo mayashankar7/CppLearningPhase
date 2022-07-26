@@ -1,3 +1,4 @@
 C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/CppLearningPhase.dir
+C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/strings.dir
 C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/rebuild_cache.dir

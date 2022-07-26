@@ -55,6 +55,12 @@ build CMakeFiles/CppLearningPhase.dir/main.cpp.obj: CXX_COMPILER__CppLearningPha
   OBJECT_DIR = CMakeFiles\CppLearningPhase.dir
   OBJECT_FILE_DIR = CMakeFiles\CppLearningPhase.dir
 
+build CMakeFiles/CppLearningPhase.dir/strings.cpp.obj: CXX_COMPILER__CppLearningPhase_Debug C$:/Users/mayas/CLionProjects/CppLearningPhase/strings.cpp || cmake_object_order_depends_target_CppLearningPhase
+  DEP_FILE = CMakeFiles\CppLearningPhase.dir\strings.cpp.obj.d
+  FLAGS = -g -std=gnu++1z
+  OBJECT_DIR = CMakeFiles\CppLearningPhase.dir
+  OBJECT_FILE_DIR = CMakeFiles\CppLearningPhase.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CppLearningPhase
@@ -63,7 +69,7 @@ build CMakeFiles/CppLearningPhase.dir/main.cpp.obj: CXX_COMPILER__CppLearningPha
 #############################################
 # Link the executable CppLearningPhase.exe
 
-build CppLearningPhase.exe: CXX_EXECUTABLE_LINKER__CppLearningPhase_Debug CMakeFiles/CppLearningPhase.dir/main.cpp.obj
+build CppLearningPhase.exe: CXX_EXECUTABLE_LINKER__CppLearningPhase_Debug CMakeFiles/CppLearningPhase.dir/main.cpp.obj CMakeFiles/CppLearningPhase.dir/strings.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CppLearningPhase.dir
@@ -72,6 +78,39 @@ build CppLearningPhase.exe: CXX_EXECUTABLE_LINKER__CppLearningPhase_Debug CMakeF
   TARGET_FILE = CppLearningPhase.exe
   TARGET_IMPLIB = libCppLearningPhase.dll.a
   TARGET_PDB = CppLearningPhase.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target strings
+
+
+#############################################
+# Order-only phony target for strings
+
+build cmake_object_order_depends_target_strings: phony || CMakeFiles/strings.dir
+
+build CMakeFiles/strings.dir/strings.cpp.obj: CXX_COMPILER__strings_Debug C$:/Users/mayas/CLionProjects/CppLearningPhase/strings.cpp || cmake_object_order_depends_target_strings
+  DEP_FILE = CMakeFiles\strings.dir\strings.cpp.obj.d
+  FLAGS = -g -std=gnu++1z
+  OBJECT_DIR = CMakeFiles\strings.dir
+  OBJECT_FILE_DIR = CMakeFiles\strings.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target strings
+
+
+#############################################
+# Link the executable strings.exe
+
+build strings.exe: CXX_EXECUTABLE_LINKER__strings_Debug CMakeFiles/strings.dir/strings.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\strings.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = strings.exe
+  TARGET_IMPLIB = libstrings.dll.a
+  TARGET_PDB = strings.exe.dbg
 
 
 #############################################
@@ -101,6 +140,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build CppLearningPhase: phony CppLearningPhase.exe
 
+build strings: phony strings.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -109,7 +150,7 @@ build CppLearningPhase: phony CppLearningPhase.exe
 #############################################
 # Folder: C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug
 
-build all: phony CppLearningPhase.exe
+build all: phony CppLearningPhase.exe strings.exe
 
 # =============================================================================
 # Built-in targets
