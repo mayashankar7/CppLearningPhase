@@ -67,6 +67,24 @@ build CMakeFiles/CppLearningPhase.dir/classes.cpp.obj: CXX_COMPILER__CppLearning
   OBJECT_DIR = CMakeFiles\CppLearningPhase.dir
   OBJECT_FILE_DIR = CMakeFiles\CppLearningPhase.dir
 
+build CMakeFiles/CppLearningPhase.dir/pointers.cpp.obj: CXX_COMPILER__CppLearningPhase_Debug C$:/Users/mayas/CLionProjects/CppLearningPhase/pointers.cpp || cmake_object_order_depends_target_CppLearningPhase
+  DEP_FILE = CMakeFiles\CppLearningPhase.dir\pointers.cpp.obj.d
+  FLAGS = -g -std=gnu++1z
+  OBJECT_DIR = CMakeFiles\CppLearningPhase.dir
+  OBJECT_FILE_DIR = CMakeFiles\CppLearningPhase.dir
+
+build CMakeFiles/CppLearningPhase.dir/practice.cpp.obj: CXX_COMPILER__CppLearningPhase_Debug C$:/Users/mayas/CLionProjects/CppLearningPhase/practice.cpp || cmake_object_order_depends_target_CppLearningPhase
+  DEP_FILE = CMakeFiles\CppLearningPhase.dir\practice.cpp.obj.d
+  FLAGS = -g -std=gnu++1z
+  OBJECT_DIR = CMakeFiles\CppLearningPhase.dir
+  OBJECT_FILE_DIR = CMakeFiles\CppLearningPhase.dir
+
+build CMakeFiles/CppLearningPhase.dir/cpp_structure.cpp.obj: CXX_COMPILER__CppLearningPhase_Debug C$:/Users/mayas/CLionProjects/CppLearningPhase/cpp_structure.cpp || cmake_object_order_depends_target_CppLearningPhase
+  DEP_FILE = CMakeFiles\CppLearningPhase.dir\cpp_structure.cpp.obj.d
+  FLAGS = -g -std=gnu++1z
+  OBJECT_DIR = CMakeFiles\CppLearningPhase.dir
+  OBJECT_FILE_DIR = CMakeFiles\CppLearningPhase.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CppLearningPhase
@@ -75,7 +93,7 @@ build CMakeFiles/CppLearningPhase.dir/classes.cpp.obj: CXX_COMPILER__CppLearning
 #############################################
 # Link the executable CppLearningPhase.exe
 
-build CppLearningPhase.exe: CXX_EXECUTABLE_LINKER__CppLearningPhase_Debug CMakeFiles/CppLearningPhase.dir/main.cpp.obj CMakeFiles/CppLearningPhase.dir/strings.cpp.obj CMakeFiles/CppLearningPhase.dir/classes.cpp.obj
+build CppLearningPhase.exe: CXX_EXECUTABLE_LINKER__CppLearningPhase_Debug CMakeFiles/CppLearningPhase.dir/main.cpp.obj CMakeFiles/CppLearningPhase.dir/strings.cpp.obj CMakeFiles/CppLearningPhase.dir/classes.cpp.obj CMakeFiles/CppLearningPhase.dir/pointers.cpp.obj CMakeFiles/CppLearningPhase.dir/practice.cpp.obj CMakeFiles/CppLearningPhase.dir/cpp_structure.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CppLearningPhase.dir
@@ -84,6 +102,116 @@ build CppLearningPhase.exe: CXX_EXECUTABLE_LINKER__CppLearningPhase_Debug CMakeF
   TARGET_FILE = CppLearningPhase.exe
   TARGET_IMPLIB = libCppLearningPhase.dll.a
   TARGET_PDB = CppLearningPhase.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target pointers
+
+
+#############################################
+# Order-only phony target for pointers
+
+build cmake_object_order_depends_target_pointers: phony || CMakeFiles/pointers.dir
+
+build CMakeFiles/pointers.dir/pointers.cpp.obj: CXX_COMPILER__pointers_Debug C$:/Users/mayas/CLionProjects/CppLearningPhase/pointers.cpp || cmake_object_order_depends_target_pointers
+  DEP_FILE = CMakeFiles\pointers.dir\pointers.cpp.obj.d
+  FLAGS = -g -std=gnu++1z
+  OBJECT_DIR = CMakeFiles\pointers.dir
+  OBJECT_FILE_DIR = CMakeFiles\pointers.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pointers
+
+
+#############################################
+# Link the executable pointers.exe
+
+build pointers.exe: CXX_EXECUTABLE_LINKER__pointers_Debug CMakeFiles/pointers.dir/pointers.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\pointers.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = pointers.exe
+  TARGET_IMPLIB = libpointers.dll.a
+  TARGET_PDB = pointers.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target main
+
+
+#############################################
+# Order-only phony target for main
+
+build cmake_object_order_depends_target_main: phony || CMakeFiles/main.dir
+
+build CMakeFiles/main.dir/main.cpp.obj: CXX_COMPILER__main_Debug C$:/Users/mayas/CLionProjects/CppLearningPhase/main.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++1z
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target main
+
+
+#############################################
+# Link the executable main.exe
+
+build main.exe: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = main.exe
+  TARGET_IMPLIB = libmain.dll.a
+  TARGET_PDB = main.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\mayas\CLionProjects\CppLearningPhase\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target practice
+
+
+#############################################
+# Order-only phony target for practice
+
+build cmake_object_order_depends_target_practice: phony || CMakeFiles/practice.dir
+
+build CMakeFiles/practice.dir/practice.cpp.obj: CXX_COMPILER__practice_Debug C$:/Users/mayas/CLionProjects/CppLearningPhase/practice.cpp || cmake_object_order_depends_target_practice
+  DEP_FILE = CMakeFiles\practice.dir\practice.cpp.obj.d
+  FLAGS = -g -std=gnu++1z
+  OBJECT_DIR = CMakeFiles\practice.dir
+  OBJECT_FILE_DIR = CMakeFiles\practice.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target practice
+
+
+#############################################
+# Link the executable practice.exe
+
+build practice.exe: CXX_EXECUTABLE_LINKER__practice_Debug CMakeFiles/practice.dir/practice.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\practice.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = practice.exe
+  TARGET_IMPLIB = libpractice.dll.a
+  TARGET_PDB = practice.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target strings
@@ -151,16 +279,38 @@ build classes.exe: CXX_EXECUTABLE_LINKER__classes_Debug CMakeFiles/classes.dir/c
   TARGET_IMPLIB = libclasses.dll.a
   TARGET_PDB = classes.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target cpp_structure
+
 
 #############################################
-# Utility command for edit_cache
+# Order-only phony target for cpp_structure
 
-build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\mayas\CLionProjects\CppLearningPhase\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
+build cmake_object_order_depends_target_cpp_structure: phony || CMakeFiles/cpp_structure.dir
 
-build edit_cache: phony CMakeFiles/edit_cache.util
+build CMakeFiles/cpp_structure.dir/cpp_structure.cpp.obj: CXX_COMPILER__cpp_structure_Debug C$:/Users/mayas/CLionProjects/CppLearningPhase/cpp_structure.cpp || cmake_object_order_depends_target_cpp_structure
+  DEP_FILE = CMakeFiles\cpp_structure.dir\cpp_structure.cpp.obj.d
+  FLAGS = -g -std=gnu++1z
+  OBJECT_DIR = CMakeFiles\cpp_structure.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp_structure.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cpp_structure
+
+
+#############################################
+# Link the executable cpp_structure.exe
+
+build cpp_structure.exe: CXX_EXECUTABLE_LINKER__cpp_structure_Debug CMakeFiles/cpp_structure.dir/cpp_structure.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\cpp_structure.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp_structure.exe
+  TARGET_IMPLIB = libcpp_structure.dll.a
+  TARGET_PDB = cpp_structure.exe.dbg
 
 
 #############################################
@@ -181,6 +331,14 @@ build CppLearningPhase: phony CppLearningPhase.exe
 
 build classes: phony classes.exe
 
+build cpp_structure: phony cpp_structure.exe
+
+build main: phony main.exe
+
+build pointers: phony pointers.exe
+
+build practice: phony practice.exe
+
 build strings: phony strings.exe
 
 # =============================================================================
@@ -191,7 +349,7 @@ build strings: phony strings.exe
 #############################################
 # Folder: C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug
 
-build all: phony CppLearningPhase.exe strings.exe classes.exe
+build all: phony CppLearningPhase.exe pointers.exe main.exe practice.exe strings.exe classes.exe cpp_structure.exe
 
 # =============================================================================
 # Built-in targets

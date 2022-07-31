@@ -1,5 +1,6 @@
 #include <iostream>
 #include <climits>
+#include <cmath>
 using namespace std;
 
 int main() {
@@ -48,6 +49,11 @@ int main() {
         }
     }
     cout<<sizeof(arr2)<<endl;
+//    power of a number pow(base,exponent)
+    int pow_value= pow(3,5);
+    cout<<pow_value<<endl;
+//    value of pi can be obtained using cmath header file by M_PI
+    cout<<M_PI<<endl;
 
     return 0;
 }

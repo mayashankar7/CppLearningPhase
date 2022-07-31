@@ -13,7 +13,10 @@ int main(){
 //    raw string literal
     string value= R"(my nme.\ is .\ maya .\ shankar)";
     cout<<value<<endl;
-
-
+//    Gettiing string value in user input using getline method
+    string username;
+    getline(cin,username);
+    cout<<username<<endl;
     return 0;
 }
+
