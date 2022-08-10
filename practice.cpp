@@ -30,15 +30,27 @@ using namespace std;
 //
 //    return n;
 //}
-int max_element(int array[], int n){
-    int max = 0;
-    for(int i=0; i<n; i++){
-        if(array[i]>max) {
-            max = array[i];
+//int max_element(int array[], int n){
+//    int max = 0;
+//    for(int i=0; i<n; i++){
+//        if(array[i]>array[max]) {
+//            max = array[i];
+//        }
+//    }
+//    return max;
+//
+//}
+bool  arraIsSorted(int array[] , int n){
+    bool value=false;
+    for(int i=0; i<n-1; i++){
+        if(array[i]<array[i+1]) {
+            value = true;
+        }else {
+            value = false;
+            break;
         }
     }
-    return max;
-
+    return value;
 }
 int main(){
     int n;
@@ -52,7 +64,9 @@ int main(){
 //        cout<<array[i]<<" ";
 //    }
 
-    cout<<max_element(array, n)<<endl;
+//    cout<<max_element(array, n)<<endl;
+
+    cout<<arraIsSorted(array,n)<<endl;
 
 
 }
