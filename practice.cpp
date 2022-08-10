@@ -1,26 +1,27 @@
-#include<bits/stdc++.h>
+//  program to insert an element in an array
+#include<iostream>
 
-using  namespace std;
-
+using namespace std;
+int insert_element(int array[], int n, int position, int capasity, int x){
+    if(n == capasity){
+        return n;
+    }
+    int index = position-1;
+    for(int i=n-1; i>=index; i--){
+        array[i+1]= array[i];
+    }
+    array[index]=x;
+    return (n+1);
+}
 int main(){
-    int n=15;
-    int arr[n];
-    for(int i=0; i<n; i++){
-        cin>>arr[i];
+    int n;
+    cin>>n;
+    int array[n];
+    for(int i=0; i<n ; i++){
+        cin>>array[i];
     }
-    int min=100;
-    int max=0;
-    int sum=0;
-    for(int i=0; i<n; i++ ){
-        if(arr[i] >max){
-            max=arr[i];
-        }
-        if(arr[i]<min){
-            min = arr[i];
-        }
-        sum = sum +arr[i];
-    }
-    cout<<max<<"\t"<<min<<endl;
-    cout<<sum/15.0<<endl;
-    return 0;
+    n++;
+    int result = insert_element(array,n, 3, 10, 77);
+    cout<<result<<endl;
+    cout<<array[2];
 }
