@@ -13,22 +13,32 @@ using namespace std;
 //    return (n+1);
 //}
 
-int deleteElement(int arr[], int n, int x)
-{
-
-    int i;
-    for (i=0; i<n; i++)
-        if (arr[i] == x)
-            break;
-
-    if (i < n)
-    {
-        n = n - 1;
-        for (int j=i; j<n; j++)
-            arr[j] = arr[j+1];
+//int deleteElement(int arr[], int n, int x)
+//{
+//
+//    int i;
+//    for (i=0; i<n; i++)
+//        if (arr[i] == x)
+//            break;
+//
+//    if (i < n)
+//    {
+//        n = n - 1;
+//        for (int j=i; j<n; j++)
+//            arr[j] = arr[j+1];
+//    }
+//
+//    return n;
+//}
+int max_element(int array[], int n){
+    int max = 0;
+    for(int i=0; i<n; i++){
+        if(array[i]>max) {
+            max = array[i];
+        }
     }
+    return max;
 
-    return n;
 }
 int main(){
     int n;
@@ -37,9 +47,12 @@ int main(){
     for(int i=0; i<n ; i++){
         cin>>array[i];
     }
-    n = deleteElement(array, n, 12);
-    for(int i=0; i<n; i++){
-        cout<<array[i]<<" ";
-    }
+//    n = deleteElement(array, n, 12);
+//    for(int i=0; i<n; i++){
+//        cout<<array[i]<<" ";
+//    }
+
+    cout<<max_element(array, n)<<endl;
+
 
 }
