@@ -1,9 +1,10 @@
 C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/CppLearningPhase.dir
 C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/pointers.dir
-C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/main.dir
-C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/practice.dir
+C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/main.dir
 C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/strings.dir
 C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/classes.dir
+C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/ATMProject.dir
 C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/cpp_structure.dir
 C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug/CMakeFiles/rebuild_cache.dir

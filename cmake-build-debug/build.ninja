@@ -85,6 +85,12 @@ build CMakeFiles/CppLearningPhase.dir/cpp_structure.cpp.obj: CXX_COMPILER__CppLe
   OBJECT_DIR = CMakeFiles\CppLearningPhase.dir
   OBJECT_FILE_DIR = CMakeFiles\CppLearningPhase.dir
 
+build CMakeFiles/CppLearningPhase.dir/ATMProject.cpp.obj: CXX_COMPILER__CppLearningPhase_Debug C$:/Users/mayas/CLionProjects/CppLearningPhase/ATMProject.cpp || cmake_object_order_depends_target_CppLearningPhase
+  DEP_FILE = CMakeFiles\CppLearningPhase.dir\ATMProject.cpp.obj.d
+  FLAGS = -g -std=gnu++1z
+  OBJECT_DIR = CMakeFiles\CppLearningPhase.dir
+  OBJECT_FILE_DIR = CMakeFiles\CppLearningPhase.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CppLearningPhase
@@ -93,7 +99,7 @@ build CMakeFiles/CppLearningPhase.dir/cpp_structure.cpp.obj: CXX_COMPILER__CppLe
 #############################################
 # Link the executable CppLearningPhase.exe
 
-build CppLearningPhase.exe: CXX_EXECUTABLE_LINKER__CppLearningPhase_Debug CMakeFiles/CppLearningPhase.dir/main.cpp.obj CMakeFiles/CppLearningPhase.dir/strings.cpp.obj CMakeFiles/CppLearningPhase.dir/classes.cpp.obj CMakeFiles/CppLearningPhase.dir/pointers.cpp.obj CMakeFiles/CppLearningPhase.dir/practice.cpp.obj CMakeFiles/CppLearningPhase.dir/cpp_structure.cpp.obj
+build CppLearningPhase.exe: CXX_EXECUTABLE_LINKER__CppLearningPhase_Debug CMakeFiles/CppLearningPhase.dir/main.cpp.obj CMakeFiles/CppLearningPhase.dir/strings.cpp.obj CMakeFiles/CppLearningPhase.dir/classes.cpp.obj CMakeFiles/CppLearningPhase.dir/pointers.cpp.obj CMakeFiles/CppLearningPhase.dir/practice.cpp.obj CMakeFiles/CppLearningPhase.dir/cpp_structure.cpp.obj CMakeFiles/CppLearningPhase.dir/ATMProject.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CppLearningPhase.dir
@@ -137,50 +143,6 @@ build pointers.exe: CXX_EXECUTABLE_LINKER__pointers_Debug CMakeFiles/pointers.di
   TARGET_PDB = pointers.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target main
-
-
-#############################################
-# Order-only phony target for main
-
-build cmake_object_order_depends_target_main: phony || CMakeFiles/main.dir
-
-build CMakeFiles/main.dir/main.cpp.obj: CXX_COMPILER__main_Debug C$:/Users/mayas/CLionProjects/CppLearningPhase/main.cpp || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles\main.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++1z
-  OBJECT_DIR = CMakeFiles\main.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target main
-
-
-#############################################
-# Link the executable main.exe
-
-build main.exe: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\main.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = main.exe
-  TARGET_IMPLIB = libmain.dll.a
-  TARGET_PDB = main.exe.dbg
-
-
-#############################################
-# Utility command for edit_cache
-
-build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\mayas\CLionProjects\CppLearningPhase\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build edit_cache: phony CMakeFiles/edit_cache.util
-
-# =============================================================================
 # Object build statements for EXECUTABLE target practice
 
 
@@ -212,6 +174,50 @@ build practice.exe: CXX_EXECUTABLE_LINKER__practice_Debug CMakeFiles/practice.di
   TARGET_FILE = practice.exe
   TARGET_IMPLIB = libpractice.dll.a
   TARGET_PDB = practice.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\mayas\CLionProjects\CppLearningPhase\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target main
+
+
+#############################################
+# Order-only phony target for main
+
+build cmake_object_order_depends_target_main: phony || CMakeFiles/main.dir
+
+build CMakeFiles/main.dir/main.cpp.obj: CXX_COMPILER__main_Debug C$:/Users/mayas/CLionProjects/CppLearningPhase/main.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++1z
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target main
+
+
+#############################################
+# Link the executable main.exe
+
+build main.exe: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = main.exe
+  TARGET_IMPLIB = libmain.dll.a
+  TARGET_PDB = main.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target strings
@@ -280,6 +286,39 @@ build classes.exe: CXX_EXECUTABLE_LINKER__classes_Debug CMakeFiles/classes.dir/c
   TARGET_PDB = classes.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target ATMProject
+
+
+#############################################
+# Order-only phony target for ATMProject
+
+build cmake_object_order_depends_target_ATMProject: phony || CMakeFiles/ATMProject.dir
+
+build CMakeFiles/ATMProject.dir/ATMProject.cpp.obj: CXX_COMPILER__ATMProject_Debug C$:/Users/mayas/CLionProjects/CppLearningPhase/ATMProject.cpp || cmake_object_order_depends_target_ATMProject
+  DEP_FILE = CMakeFiles\ATMProject.dir\ATMProject.cpp.obj.d
+  FLAGS = -g -std=gnu++1z
+  OBJECT_DIR = CMakeFiles\ATMProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\ATMProject.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ATMProject
+
+
+#############################################
+# Link the executable ATMProject.exe
+
+build ATMProject.exe: CXX_EXECUTABLE_LINKER__ATMProject_Debug CMakeFiles/ATMProject.dir/ATMProject.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\ATMProject.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = ATMProject.exe
+  TARGET_IMPLIB = libATMProject.dll.a
+  TARGET_PDB = ATMProject.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target cpp_structure
 
 
@@ -327,6 +366,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build ATMProject: phony ATMProject.exe
+
 build CppLearningPhase: phony CppLearningPhase.exe
 
 build classes: phony classes.exe
@@ -349,7 +390,7 @@ build strings: phony strings.exe
 #############################################
 # Folder: C:/Users/mayas/CLionProjects/CppLearningPhase/cmake-build-debug
 
-build all: phony CppLearningPhase.exe pointers.exe main.exe practice.exe strings.exe classes.exe cpp_structure.exe
+build all: phony CppLearningPhase.exe pointers.exe practice.exe main.exe strings.exe classes.exe ATMProject.exe cpp_structure.exe
 
 # =============================================================================
 # Built-in targets
