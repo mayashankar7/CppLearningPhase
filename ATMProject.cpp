@@ -3,114 +3,101 @@
 #include<string>
 using namespace std;
 
-/* Mini Project - ATM
-   -> Check Balance
-   -> Cash withdraw
-   -> User Details
-   -> Update Mobile No.
-*/
-
-
-class atm										// class atm
+class atm
 {
-private:										// private member varibles
+private:
     long int account_No;
     string name;
     int PIN;
     double balance;
     string mobile_No;
 
-public:											// public member functions
+public:
 
-    // setData function is setting the Data into the private member variables
+
     atm(long int account_No_a, string name_a, int PIN_a, double balance_a, string mobile_No_a)
     {
-        account_No = account_No_a;	 // assigning the formal arguments to the private member var's
+        account_No = account_No_a;
         name = name_a;
         PIN = PIN_a;
         balance = balance_a;
         mobile_No = mobile_No_a;
     }
 
-    //getAccountNo function is returning the user's account no.
+
     long int getAccountNo()
     {
         return account_No;
     }
 
-    //getName function is returning the user's Name
+
     string getName()
     {
         return name;
     }
 
-    //getPIN function is returning the user's PIN
     int getPIN()
     {
         return PIN;
     }
 
-    //getBalance is returning the user's Bank Balance
     double getBalance()
     {
         return balance;
     }
 
-    //getMobileNo is returning the user's Mobile No.
+
     string getMobileNo()
     {
         return mobile_No;
     }
 
-    //setMobile function is Updating the user mobile no
+
     void setMobile(string mob_prev, string mob_new)
     {
-        if (mob_prev == mobile_No)						// it will check old Mobile no
+        if (mob_prev == mobile_No)
         {
-            mobile_No = mob_new;						// and Update with new, if old matches
+            mobile_No = mob_new;
             cout << endl << "Sucessfully Updated Mobile no.";
-            _getch();				//getch is to hold the screen ( untill user press any key )
+            _getch();
         }
 
-        else							// Does not update if old mobile no. does not matches
+        else
         {
             cout << endl << "Incorrect !!! Old Mobile no";
-            _getch();			  //getch is to hold the screen ( untill user press any key )
+            _getch();
         }
     }
 
-    //cashWithDraw function is used to withdraw money from ATM
+
     void cashWithDraw(int amount_a)
     {
-        if (amount_a > 0 && amount_a < balance)		// check entered amount validity
+        if (amount_a > 0 && amount_a < balance)
         {
-            balance -= amount_a;		// balance = balance - amount_a
+            balance -= amount_a;
             cout << endl << "Please Collect Your Cash";
             cout << endl << "Available Balance :" << balance;
-            _getch();				//getch is to hold the screen(untill user press any key )
+            _getch();
         }
 
         else
         {
             cout << endl << "Invalid Input or Insufficient Balance";
-            _getch();				//getch is to hold the screen ( untill user press any key )
+            _getch();
         }
     }
 
 };
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////
 int main()
 {
-    int choice = 0, enterPIN;		//enterPIN and enterAccountNo. ---> user authentication
+    int choice = 0, enterPIN;
     long int enterAccountNo;
 
     system("cls");
 
-    // created User ( object )
 
-    // Set User Details ( into object )         ( Setting Default Data )
     atm user1(1234567, "Tim", 1111, 45000.90, "9087654321");
 
 
@@ -119,10 +106,10 @@ int main()
         system("cls");
 
         cout << endl << "****Welcome to ATM*****" << endl;
-        cout << endl << "Enter Your Account No ";	  // asking user to enter account no
+        cout << endl << "Enter Your Account No ";
         cin >> enterAccountNo;
 
-        cout << endl << "Enter PIN ";				 // asking user to enter PIN
+        cout << endl << "Enter PIN ";
         cin >> enterPIN;
 
 
@@ -200,7 +187,7 @@ int main()
             cout << endl << "User Details are Invalid !!! ";
             _getch();
         }
-    } while (1);						//LOGIN		// condition will always TRUE and loop is capable of running infinite times
+    } while (1);
 
     return 0;
 }

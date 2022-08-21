@@ -1,25 +1,32 @@
 #include<iostream>
 using namespace std;
-class Maya2{
+
+class Base{
 private:
-    int age;
+    int length;
+    int breadth;
 public:
-    int salary;
-//    setters
-    void setData(int a, int s){
-        age = a;
-        salary= s;
+    Base(){
+      cout<<"default constructor of base class is called"<<endl;
     }
-    int getAge(){
-        return age;
-    }
-    int getSalary(){
-        return salary;
+    Base(int a){
+        cout<<"parameterized constructor of base class is called"<<endl;
     }
 };
-int main(){
-    Maya2 m1 ;
-    m1.setData(22,55000);
-    cout<<m1.getAge()<<" "<<m1.getSalary()<<endl;
+class derived: public Base{
+public:
+    derived(){
+        cout<<"default constructor of derived class is called"<<endl;
+    }
+    derived(int a){
+        cout<<"parameterized constructor of derived class is called"<<endl;
+    }
+};
 
+int main(){
+    Base b1;
+    Base b2(10);
+    derived d1;
+    derived d2(15);
+    return 0;
 }
