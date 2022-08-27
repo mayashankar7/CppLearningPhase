@@ -13,8 +13,6 @@ private:
     string mobile_No;
 
 public:
-
-
     atm(long int account_No_a, string name_a, int PIN_a, double balance_a, string mobile_No_a)
     {
         account_No = account_No_a;

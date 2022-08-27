@@ -3,13 +3,9 @@
 using namespace std;
 
 int main(){
-    int value = 10;
-    cout<<&value<<endl;
-    int *p = &value;
-    cout<<p<<endl;
-    cout<<"value of "<<value<<" is equal to the *P "<<*p<<endl;
-//    double pointers
-    int **pa = &p;
-    cout<<**pa<<endl;
+    int x,y,z;
+    x=3,y=4;
+    z=++x*y--;
+    cout<<x<<endl<<y<<endl<<z<<endl;
     return 0;
 }

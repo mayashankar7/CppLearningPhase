@@ -1,22 +1,33 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-
+class Node{
+public:
+    int value;
+    Node* next;
+};
 int main(){
-    string name = "mayashankar jha";
-    cout<<name<<endl;
-//    pop_back() function is used to delete the last character from the string.
-    name.pop_back();
-    cout<<name<<endl;
-//    push_back( function is used to input a character at the end of the string.
-    name.push_back('l');
-    cout<<name<<endl;
-//    raw string literal
-    string value= R"(my nme.\ is .\ maya .\ shankar)";
-    cout<<value<<endl;
-//    Gettiing string value in user input using getline method
-    string username;
-    getline(cin,username);
-    cout<<username<<endl;
+    Node* head;
+    Node* one = nullptr;
+    Node* two = nullptr;
+    Node* three = nullptr;
+    one = new Node();
+    two = new Node();
+    three = new Node();
+
+    one->value=1;
+    two->value= 2;
+    three->value= 3;
+
+    one->next=two;
+    two->next= three;
+    three->next= NULL;
+
+    head = one;
+    while(head != NULL){
+        cout<<head->value<<endl;
+        head=head->next;
+    }
+
+
     return 0;
 }
-
