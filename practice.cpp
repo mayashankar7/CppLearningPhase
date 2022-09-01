@@ -1,21 +1,42 @@
-//Coding Ninja - Sum of even and odd
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-    int n;
-    cin>>n;
-    int even_sum=0, odd_sum=0;
-    while(n>0){
-        int rem = n%10;
-        if(rem%2==0){
-            even_sum+=rem;
-        }else{
-            odd_sum+=rem;
-        }
-        n/=10;
+class Car {
+public:
+    // Write your constructor and printCarInfo method here.
+    int noOfGear;
+    string color;
+    Car(int noOfGear, string color){
+            this->noOfGear= noOfGear;
+            this->color= color;
+    }
+    void printCarInfo(){
 
     }
-    cout<<even_sum<<"\t"<<odd_sum<<endl;
+};
+
+
+class RaceCar: public Car {
+    // Write your constructor and printRaceCarInfo method here.
+public:
+    int maxSpeed;
+
+    RaceCar(int noOfGear, string color, int maxSpeed){
+        this->maxSpeed= maxSpeed;
+    }
+    void printRaceCarInfo(){
+        cout<<"noOfGear: "<<noOfGear<<endl;
+        cout<<"color: "<<color<<endl;
+        cout<<"maxSpeed: "<<maxSpeed<<endl;
+    }
+};
+
+
+int main() {
+    int noOfGear, maxSpeed;
+    string color;
+    cin >> noOfGear >> color >> maxSpeed;
+    RaceCar raceCar(noOfGear, color, maxSpeed);
+    raceCar.printInfo();
     return 0;
 }

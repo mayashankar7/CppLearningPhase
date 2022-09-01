@@ -1,25 +1,32 @@
-#include<bits/stdc++.h>
-
+#include<iostream>
 using namespace std;
 
-class mayas{
+class Fraction{
+private:
+    int numerator;
+    int denominator;
 public:
-    double length;
-    double breadth;
-    double height;
-    double calculateArea(){
-        return length * breadth;
+    Fraction(int numerator, int denominator){
+        this->numerator= numerator;
+        this->denominator= denominator;
     }
-    double calculateVolume(){
-        return length * breadth * height;
+    void print(){
+        cout<<numerator<<"/"<<denominator<<endl;
     }
+    Fraction operator*(Fraction const &f2){
+        int n = numerator*f2.numerator;
+        int d = denominator*f2.denominator;
+        Fraction fNew(n,d);
+        return fNew;
+    }
+
 };
 int main(){
-    mayas maya;
-    maya.length=10;
-    maya.breadth=12;
-    maya.height=16;
-    cout<<maya.calculateArea()<<endl;
-    cout<<maya.calculateVolume()<<endl;
+    Fraction f1(10,5);
+    Fraction f2(12,8);
+    f1.print();
+    f2.print();
+    Fraction f3 = f1*f2;
+    f3.print();
+    return 0;
 }
-
